@@ -1,5 +1,4 @@
-#ifndef VECTOR4DWIDGET_H
-#define VECTOR4DWIDGET_H
+#pragma once
 
 #include <QWidget>
 #include "dbguilib_global.h"
@@ -28,5 +27,3 @@ private:
     QDoubleSpinBox *m_doubleSpinBoxZ;
     QDoubleSpinBox *m_doubleSpinBoxW;
 };
-
-#endif // VECTOR4DWIDGET_H
