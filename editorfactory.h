@@ -3,8 +3,11 @@
 #include <QItemEditorFactory>
 #include "dbguilib_global.h"
 
-class DBGUILIB_EXPORT BetterItemFactory : public QItemEditorFactory
+// Example usage:
+// QItemEditorFactory::setDefaultFactory(new EditorFactory());
+
+class DBGUILIB_EXPORT EditorFactory : public QItemEditorFactory
 {
 public:
-    BetterItemFactory();
+    EditorFactory();
 };

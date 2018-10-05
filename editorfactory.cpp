@@ -21,7 +21,7 @@
 #include "vector4dwidget.h"
 #include "quaternionwidget.h"
 
-BetterItemFactory::BetterItemFactory() :
+EditorFactory::EditorFactory() :
     QItemEditorFactory()
 {
     registerEditor(QVariant::Bool, new QStandardItemEditorCreator<QCheckBox>());
