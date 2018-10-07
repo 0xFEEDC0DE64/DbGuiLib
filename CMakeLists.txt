@@ -26,7 +26,11 @@ set(SOURCES
     vector4dwidget.cpp
 )
 
-add_library(dbguilib ${HEADERS} ${SOURCES})
+set(FORMS
+    qstringlistwidget.ui
+)
+
+add_library(dbguilib SHARED ${HEADERS} ${SOURCES} ${FORMS})
 
 target_compile_definitions(dbguilib PRIVATE DBGUILIB_LIBRARY)
 
