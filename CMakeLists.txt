@@ -37,3 +37,5 @@ target_compile_definitions(dbguilib PRIVATE DBGUILIB_LIBRARY)
 target_link_libraries(dbguilib Qt5::Core Qt5::Gui Qt5::Widgets)
 
 target_include_directories(dbguilib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+add_dependencies(libs dbguilib)
