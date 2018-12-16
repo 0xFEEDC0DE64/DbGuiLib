@@ -1,6 +1,12 @@
 project(DbGuiLib)
 
+find_package(Qt5Core CONFIG REQUIRED)
+find_package(Qt5Gui CONFIG REQUIRED)
+find_package(Qt5Widgets CONFIG REQUIRED)
+find_package(Qt5LinguistTools CONFIG REQUIRED)
+
 set(HEADERS
+    canvaswidget.h
     dbguilib_global.h
     editorfactory.h
     ledindicator.h
@@ -15,6 +21,7 @@ set(HEADERS
 )
 
 set(SOURCES
+    canvaswidget.cpp
     editorfactory.cpp
     ledindicator.cpp
     matrix4x4widget.cpp
