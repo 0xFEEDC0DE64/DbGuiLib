@@ -12,14 +12,14 @@
 
 #include <limits>
 
-#include "limitedspinbox.h"
-#include "stringlistwidget.h"
-#include "urlwidget.h"
-#include "matrix4x4widget.h"
-#include "vector2dwidget.h"
-#include "vector3dwidget.h"
-#include "vector4dwidget.h"
-#include "quaternionwidget.h"
+#include "widgets/limitedspinbox.h"
+#include "widgets/stringlistwidget.h"
+#include "widgets/urlwidget.h"
+#include "widgets/matrix4x4widget.h"
+#include "widgets/vector2dwidget.h"
+#include "widgets/vector3dwidget.h"
+#include "widgets/vector4dwidget.h"
+#include "widgets/quaternionwidget.h"
 
 EditorFactory::EditorFactory() :
     QItemEditorFactory()

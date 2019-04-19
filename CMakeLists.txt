@@ -6,35 +6,45 @@ find_package(Qt5Widgets CONFIG REQUIRED)
 find_package(Qt5LinguistTools CONFIG REQUIRED)
 
 set(HEADERS
-    canvaswidget.h
     dbguilib_global.h
     editorfactory.h
-    ledindicator.h
-    limitedspinbox.h
-    matrix4x4widget.h
-    quaternionwidget.h
-    stringlistwidget.h
-    urlwidget.h
-    vector2dwidget.h
-    vector3dwidget.h
-    vector4dwidget.h
+    models/checklistmodel.h
+    models/progressmodel.h
+    widgets/canvaswidget.h
+    widgets/databasewidget.h
+    widgets/fileselectionwidget.h
+    widgets/ledindicator.h
+    widgets/limitedspinbox.h
+    widgets/matrix4x4widget.h
+    widgets/quaternionwidget.h
+    widgets/stringlistwidget.h
+    widgets/urlwidget.h
+    widgets/vector2dwidget.h
+    widgets/vector3dwidget.h
+    widgets/vector4dwidget.h
 )
 
 set(SOURCES
-    canvaswidget.cpp
     editorfactory.cpp
-    ledindicator.cpp
-    matrix4x4widget.cpp
-    quaternionwidget.cpp
-    stringlistwidget.cpp
-    urlwidget.cpp
-    vector2dwidget.cpp
-    vector3dwidget.cpp
-    vector4dwidget.cpp
+    models/checklistmodel.cpp
+    models/progressmodel.cpp
+    widgets/canvaswidget.cpp
+    widgets/databasewidget.cpp
+    widgets/fileselectionwidget.cpp
+    widgets/ledindicator.cpp
+    widgets/matrix4x4widget.cpp
+    widgets/quaternionwidget.cpp
+    widgets/stringlistwidget.cpp
+    widgets/urlwidget.cpp
+    widgets/vector2dwidget.cpp
+    widgets/vector3dwidget.cpp
+    widgets/vector4dwidget.cpp
 )
 
 set(FORMS
-    qstringlistwidget.ui
+    widgets/databasewidget.ui
+    widgets/fileselectionwidget.ui
+    widgets/qstringlistwidget.ui
 )
 
 set(TRANSLATIONS
