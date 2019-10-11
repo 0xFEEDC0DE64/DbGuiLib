@@ -8,7 +8,7 @@ Matrix4x4Widget::Matrix4x4Widget(QWidget *parent) :
     QWidget(parent)
 {
     auto layout = new QGridLayout(this);
-    layout->setMargin(0);
+    layout->setContentsMargins({});
     layout->addWidget(m_doubleSpinBox11 = new QDoubleSpinBox(this), 0, 0);
     layout->addWidget(m_doubleSpinBox12 = new QDoubleSpinBox(this), 0, 1);
     layout->addWidget(m_doubleSpinBox13 = new QDoubleSpinBox(this), 0, 2);

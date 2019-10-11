@@ -7,7 +7,7 @@ Vector2DWidget::Vector2DWidget(QWidget *parent) :
     QWidget(parent)
 {
     auto layout = new QHBoxLayout(this);
-    layout->setMargin(0);
+    layout->setContentsMargins({});
     layout->addWidget(m_doubleSpinBoxX = new QDoubleSpinBox(this));
     layout->addWidget(m_doubleSpinBoxY = new QDoubleSpinBox(this));
     setLayout(layout);

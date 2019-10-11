@@ -9,7 +9,7 @@ UrlWidget::UrlWidget(QWidget *parent) :
     QWidget(parent)
 {
     auto layout = new QHBoxLayout(this);
-    layout->setMargin(0);
+    layout->setContentsMargins({});
     layout->addWidget(m_lineEdit = new QLineEdit(this));
     {
         auto toolButton = new QToolButton(this);
